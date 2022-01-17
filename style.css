@@ -1,0 +1,128 @@
+/*-------------- 
+   Common CSS  
+----------------*/
+*, 
+::after, 
+::before{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(155, 215, 255);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1170px;
+    padding: 0 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*----------------------------
+    Navigation style area  
+-----------------------------*/
+header{
+    background-color:#3c4c6a ;
+}
+.inner_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_area img{
+   width: 250px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding: 21px;
+    position: relative;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0,3s;
+}
+nav ul li:hover a{
+    color: rgb(255, 166, 0);
+}
+nav ul li:hover ul a{
+    color: #fff;
+}
+/*--------------------
+    dropdown style  
+----------------------*/
+nav ul ul{
+    flex-direction: column;
+    position: absolute;
+    background: rgba(0, 40, 77, 0.651);
+    left: -999999px;
+    top: 58px;
+    width: 170px;
+    padding: 10px 0;
+}
+nav ul li:hover ul{
+    left: 0;
+}
+nav ul li:hover ul ul{
+    left: -999999px;
+}
+nav ul ul li{
+    padding: 5px 15px;
+}
+nav ul ul li:hover{
+    background: rgb(199, 0, 60);
+}
+/*---------------------
+    second dropdown  
+-----------------------*/
+nav ul ul ul{
+    left: -999999px;
+    top: 0;
+}
+nav ul ul li:hover ul{
+    left: 170px;
+    top: 0;
+}
+/*--------------------
+    third dropdown  
+----------------------*/
+nav ul ul li:hover ul ul{
+    left: -999999px;
+}
+nav ul ul ul li:hover ul{
+    left: 170px;
+    top: 0;
+}
+/*-----------------
+    button area  
+-------------------*/
+.login-btn{
+    padding: 12px 18px;
+    background-color: rgb(199, 0, 60);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+}
+.logout-btn{
+    padding: 12px 18px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: #3c4c6a;
+    color: white;
+    
+}
+/*---------------------
+          END  
+-----------------------*/
